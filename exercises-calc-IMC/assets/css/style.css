@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root {
+  --primary-color: #c709f7;
+}
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.columns {
+  display: flex;
+  
+}
+.columns-values {
+  display: flex;
+  flex-direction: column;
+}
+.columns-values > p{
+  margin: 3px;
+}
+
+.columns-values > span{
+  font-weight: 700;
+}
+
+.columns-values:last-child {
+  margin-left: 100px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+}
+.form > label {
+  margin: 5px 0;
+}
+.form > input {
+  height: 40px;
+  border-radius: 4px;
+  font-size: 16px;
+  padding-left: 16px;
+  outline: 0;
+}
+
+.form > button {
+  height: 40px;
+  border-radius: 4px;
+  margin-top: 20px;
+  background: rgb(12, 106, 122);
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.result {
+  display: flex;
+  height: 40px;
+  border-radius: 4px;
+  margin: 15px 0;
+  padding-left: 16px;
+  align-items: center;
+}
+
+.success {
+  background-color: rgb(26, 226, 133);
+}
+
+.error {
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+}
